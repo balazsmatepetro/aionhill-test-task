@@ -1,0 +1,29 @@
+@import "../node_modules/normalize.scss/normalize";
+
+@import "variables";
+@import "colour-palette";
+@import "site-heading";
+
+@import "bourbon/bourbon";
+
+html {
+    font-size: 14px;
+    height: 100%;
+}
+
+body {
+    @include background-image(
+        linear-gradient($body-bg-color-gradient-top, $body-bg-color-gradient-bottom)
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: $body-color-text;
+    font-family: $font-family;
+    height: 100%;
+
+    margin: 0 30px;
+
+    @media (min-width: $media-tablet-size) {
+        margin: 0 60px;
+    }
+}

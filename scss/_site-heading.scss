@@ -1,0 +1,30 @@
+.site-heading {
+    display: block;
+    margin: $site-heading-margin-vertical 0;
+
+    @media (min-width: $media-tablet-size) {
+        margin-top: $site-heading-margin-vertical * 3;
+        position: relative;
+    }
+}
+
+.site-heading-title {
+    font-size: $site-heading-font-size;
+    font-weight: 300;
+    margin: 0;
+
+    @media (min-width: $media-tablet-size) {
+        font-size: $site-heading-font-size * 2;
+    }
+}
+
+.site-heading-last-updated {
+    margin: 0;
+    font-weight: bold;
+
+    @media (min-width: $media-tablet-size) {
+        position: absolute;
+        right: 0;
+        top: -($site-heading-margin-vertical * 2);
+    }
+}
