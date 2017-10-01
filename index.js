@@ -14,9 +14,6 @@ app.get('/palettes', (request, response) => {
         resultOffset: request.query.from ? parseInt(request.query.from) : 0,
         numResults: 4
     }, (error, data) => {
-        // console.log(request.query);
-        // console.log('from', request.query.from ? parseInt(request.query.from) : 0);
-
         response.send(data);
     });
 });
